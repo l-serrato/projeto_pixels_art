@@ -42,7 +42,7 @@ function painter() {
   }
   painter();
 
-  let clear = document.querySelector ('#clear-board');
+  let clear = document.querySelector('#clear-board');
   function reset () {
       let pixel = document.querySelectorAll('.pixel');
       clear.addEventListener ('click', function () {
