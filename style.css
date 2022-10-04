@@ -1,7 +1,7 @@
-p {display: inline-block;
-    border: solid black 1px;
+button {border: solid black 1px;
     height: 70px;
     width: 70px;
+    vertical-align: top;
 }
 #black {background-color: black;}
 #c1 {background-color: red;}
