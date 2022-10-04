@@ -19,3 +19,4 @@ const boxes = document.querySelectorAll('td');
 for (const box of boxes) {
   box.classList.add('pixel');
 }
+document.getElementById('black').classList.add('selected');
