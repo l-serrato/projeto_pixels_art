@@ -13,7 +13,7 @@ function changeColor(){
       setBg();
 }
 localStorage.setItem('colorPalette', JSON.stringify(changeColor));
-localStorage.getItem('colorPalette'); 
+
 const boxes = document.querySelectorAll('td');
 
 for (const box of boxes) {
@@ -52,3 +52,12 @@ function painter() {
   }
   )};
   reset ();
+
+let pixel = document.querySelectorAll('.pixel');
+localStorage.setItem('drawing', JSON.stringify(pixel));
+
+function returnArt(){
+    localStorage.getItem('drawing', JSON.stringify(pixel));
+    localStorage.getItem('colorPalette'); 
+}
+window.onload = returnArt();
