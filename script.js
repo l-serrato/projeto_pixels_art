@@ -41,3 +41,14 @@ function painter() {
     }
   }
   painter();
+
+  let clear = document.querySelector ('#clear-board');
+  function reset () {
+      let pixel = document.querySelectorAll('.pixel');
+      clear.addEventListener ('click', function () {
+      for (let i = 0; i < pixel.length; i += 1) {
+        pixel[i].style.backgroundColor = 'white';
+      }
+  }
+  )};
+  reset ();
