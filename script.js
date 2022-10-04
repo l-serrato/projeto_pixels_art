@@ -31,3 +31,13 @@ paleta.addEventListener('click', (event) => {
         event.target.classList.add ('selected');
         }
 }); 
+
+function painter() {
+    const pixel = document.querySelectorAll('.pixel');
+    for (let i = 0; i < pixel.length; i += 1) {
+      pixel[i].addEventListener('click', function() {
+        pixel[i].style.backgroundColor = document.querySelector('.selected').style.backgroundColor;
+      });
+    }
+  }
+  painter();
