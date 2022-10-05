@@ -12,7 +12,8 @@ function changeColor(){
       random.addEventListener("click", setBg);
       setBg();
 }
-localStorage.setItem('colorPalette', JSON.stringify(changeColor));
+const colors = {c1: 'randomColor', c2: 'randomColor2', c3: 'randomColor3'};
+localStorage.setItem('colorPalette', JSON.stringify(colors));
 
 const boxes = document.querySelectorAll('td');
 
