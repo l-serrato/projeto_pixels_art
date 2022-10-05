@@ -12,8 +12,11 @@ function changeColor(){
       random.addEventListener("click", setBg);
       setBg();
 }
+function colorStore(){
 const colors = {c1: 'randomColor', c2: 'randomColor2', c3: 'randomColor3'};
 localStorage.setItem('colorPalette', JSON.stringify(colors));
+}
+colorStore();
 
 const boxes = document.querySelectorAll('td');
 
