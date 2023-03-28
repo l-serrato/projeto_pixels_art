@@ -61,7 +61,7 @@ let pixel = document.querySelectorAll('.pixel');
 localStorage.setItem('drawing', JSON.stringify(pixel));
 
 function returnArt(){
-    localStorage.getItem('drawing', JSON.stringify(pixel));
+    localStorage.getItem('drawing');
     localStorage.getItem('colorPalette'); 
 }
 window.onload = returnArt();
